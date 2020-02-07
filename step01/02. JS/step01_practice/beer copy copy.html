@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Do+Hyeon|Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Do+Hyeon|Jua|Nanum+Gothic+Coding|Nanum+Myeongjo|Noto+Sans+KR|Noto+Serif+KR&display=swap" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>Document</title>
+<style>
+  body{
+    box-sizing: border-box;
+    width: 80%;
+    margin-bottom: 100%;
+    
+    margin-left: 10%;
+  }
+  .site-name a{
+    /* border: 1px solid black; */
+    /* margin-top: 5%; */
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 2.5em;
+    color: darkslategray;
+    text-shadow: 1px 1px gray;   
+    text-decoration: none; 
+  }
+  a:hover{
+    color: rgba(0, 0, 0, 0.699);
+  }
+
+  /* nav */
+  .navItem {
+    /* border: 1px solid black; */
+    display: inline-block;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 1.7rem;
+    padding-left: 40px;
+    }
+    nav a {
+        color: #1e2833;
+        /* text-shadow: 1px 1px gray; */
+        text-decoration: none;
+        /* font-family: 'Do Hyeon', sans-serif; */
+        
+        /* font-family: 'Nanum Myeongjo', serif; */
+        /* font-family: 'Nanum Gothic Coding', monospace; */
+        /* font-family: 'Noto Sans KR', sans-serif; */
+        /* font-family: 'Jua', sans-serif; */
+        font-family: 'Noto Serif KR', serif;
+    }
+    .nav {
+        overflow: auto;
+    }
+    nav a:hover{
+      text-decoration: none;
+      
+    }
+    .nav-right-items{
+      /* border: 1px solid black; */
+        display: flex;
+        margin-left: 40%;    
+        margin-top: 5%;
+        align-items: center;
+    }
+    .head-text h2{
+      font-family: 'Nanum Myeongjo', serif;
+     
+      /* border: 1px solid black; */
+      margin-top: 60px;
+      font-size: 3em;
+      /* background-image: url(https://images.unsplash.com/photo-1436076863939-06870fe779c2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80); */
+      /* background-repeat: no-repeat; */
+      /* background-position-y: -200px; */
+      border-radius: 5px;
+      /* text-align: center; */
+      /* padding: 20px; */
+      margin-bottom: 40px;
+    }
+    .card-deck{
+      margin-top: 50px;
+    }
+
+    .card-img{
+      overflow: auto; 
+    }
+    
+    .bg-bottlecolor{
+    border: 1px solid red;
+}
+section{
+  border-top: 1px solid rgba(128, 128, 128, 0.5);
+}
+.all{
+  overflow: auto;
+  background-color: rgba(230, 216, 216, 0.158);
+}
+.card{
+    margin-left: 30px;
+    margin-top: 70px;
+    width: 45%;
+    /* height: 600px; */
+     display: inline-block;
+    border: 1px solid black;
+    padding: 15px; 
+ }
+
+.container{
+    position: relative;
+    margin-left: 30px;
+    margin-top: 70px;
+    width: 45%;
+    /* height: 600px; */
+     /* display: inline-block; */
+    border: 1px solid rgba(177, 170, 170, 0.4);
+    padding: 15px; 
+ 
+}
+
+ .card-text{
+    border: 1px solid black;
+   margin-top: 10px;
+   text-align: center;
+   font-family: 'Nanum Myeongjo', serif;
+
+ }
+ .all-card{
+    margin-top: 70px;
+ }
+
+ .more-button {
+    color: black;
+    font-size: 12px;
+    font-weight: bolder;
+    display: inline-block;
+    text-align: center;
+    width: 98px;
+    height: 33px;
+    line-height: 33px;
+    border: 1px solid black; }
+
+/* 실험 */
+    .image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .image {
+  opacity: 0.8;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.text a{
+    color: whitesmoke;
+    
+}
+
+/* .right-blank{
+
+    float: right;
+    width: 50%;
+    margin-right: 30px;
+    margin-top: 70px;
+    width: 45%;
+    border: 1px solid black;
+    padding: 15px 15px 230px 15px; 
+}
+
+.left-blank{
+  
+  float: left;  
+    width: 50%;
+    margin-left: 30px;
+    margin-top: 70px;
+    width: 45%;
+    border: 1px solid black;
+    padding: 15px 15px 230px 15px; 
+}*/
+
+.card-text1{
+  vertical-align: middle;
+  /* border: 1px solid black; */
+  float: right;
+  transform: translate(0%, -420px);
+   text-align: center;
+   font-family: 'Nanum Myeongjo', serif;
+
+    margin-right: 30px;
+    margin-top: 50px;
+    width: 45%;
+    /* height: 600px; */
+     /* display: inline-block; */
+    /* padding: 15px 15px 300px 15px; */
+
+}
+
+.card-text2{
+  vertical-align: middle;
+  /* border: 1px solid black; */
+  float: left;
+  transform: translate(0%, -420px);
+   text-align: center;
+   font-family: 'Nanum Myeongjo', serif;
+
+    margin-left: 30px;
+    margin-top: 50px;
+    width: 45%;
+    /* height: 600px; */
+     /* display: inline-block; */
+    /* padding: 15px 15px 300px 15px; */
+
+}
+</style> 
+
+
+
+</head>
+<body>
+    <header>
+      <nav class="nav">
+        <div class="site-name"><a href="beer copy copy.html">DAILY BEER</a></div>   
+         <div class="nav-right-items">
+           <div class="navItem"><a href="#shape">맥주병 색</a></div>
+           <div class="navItem"><a href="#size">도수   </a></div>
+           <div class="navItem"><a href="#ecology">종류</a></div>
+           <div class="navItem"><a href="#etc">기타정보</a></div> 
+        </div>
+      </nav>
+      <div class="head-text">
+        <h2>지금 이 순간, 나를 위한 맥주</h2>
+      </div>
+       <!-- <div class="site-name">
+          DAILY BEER
+       </div>
+       <nav>
+           <ul>
+             <li><a href="#shape">맥주병 색</a></li>
+             <li><a href="#size">도수</a></li>
+             <li><a href="#ecology">종류</a></li>
+             <li><a href="#etc">기타정보</a></li>
+           </ul>
+        </nav> -->
+     </header>    
+    <section class="all">
+      <div class="all-card">
+        <div class="container" id ="shape">
+          <img src="https://cdn.pixabay.com/photo/2016/11/29/12/32/beach-1869523_960_720.jpg" alt="Avatar" class="image" style="width:100%">
+          <div class="middle">
+            <div class="text"> <a href="proj\ex.beer.html">자세히 보기</a></div>
+          </div>
+        </div>
+        <div class="card-text1">
+          <br>
+          <h2>Color of Bottle</h2> <br>
+
+          갈색병은 이제 그만, <br>
+          지중해의 파란 하늘빛을 닮은 병에 담긴 맥주는 어떤가요? <br > <br>
+          Lorem Ipsum is simply dummy text of the printing and typesetting <br>
+          industry. Lorem Ipsum has been the industry's standard dummy <br>
+          text ever since the 1500s, when an unknown printer took a galley of <br>
+          type and scrambled it to make a type specimen book. It has survived <br>
+          not only five centuries, but also the leap into electronic typesett <br>
+          ing, remaining essentially unchanged. It was popularised in <br>
+           It has roots in a piece of classical Latin literature from 45 BC, <br> <br>
+        </div>
+        
+
+
+
+        <div class="container" id="size" style="float: right; transform: translate(100%, 3%);">
+          <img src="https://images.unsplash.com/photo-1532634905-7db9859e6832?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="Avatar" class="image" style="width:100%">
+          <div class="middle">
+            <div class="text"> <a href="proj\ex.beer.html">자세히 보기</a></div>
+          </div>
+        </div>
+        <div class="card-text2">
+          <br><h2>Color of Beer</h2> <br>
+          갈색병은 이제 그만, <br>
+          지중해의 파란 하늘빛을 닮은 병에 담긴 맥주는 어떤가요? <br > <br>
+          At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis <br>
+          praesentium voluptatum deleniti atque corrupti quos dolores <br>
+          et quas molestias excepturi sint occaecati cupiditate non provident, <br>
+          similique sunt in culpa qui officia deserunt mollitia animi, id est  <br>
+          iaborum et dolorum fuga. Et harum quidem rerum facili <br>
+          est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligend <br>
+          ing, remaining essentially unchanged. It was popularised in <br>
+           It has roots in a piece of classical Latin literature from 45 BC, <br> <br>
+        </div>
+
+      <div class="container" id="ecology" style="float: left; transform: translate(-106%, 0%)">
+          <img src="https://images.unsplash.com/photo-1576626218405-db77c87e78c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1047&q=80" alt="Avatar" class="image" style="width:100%">
+          <div class="middle">
+            <div class="text"> <a href="proj\ex.beer.html">자세히 보기</a></div>
+          </div>
+        </div>
+        <div class="card-text1">
+          <br>
+          <h2>Type</h2> <br>
+
+          갈색병은 이제 그만, <br>
+          지중해의 파란 하늘빛을 닮은 병에 담긴 맥주는 어떤가요? <br > <br>
+          But I must explain to you how all this mistaken idea of denouncing pl <br>
+          pleasure and praising pain was born and I will give you a complet <br>
+          account of the system, and expound the actual teachings of <br>
+          he great explorer of the truth, the master-builder of human happiness. <br>
+          not only five centuries, but also the leap into electronic typesett <br>
+          ing, remaining essentially unchanged. It was popularised in <br>
+           It has roots in a piece of classical Latin literature from 45 BC, <br> <br>
+        </div>
+
+
+       <div class="container" id="etc" style="float: right; transform: translate(100%, 0%);">
+          <img src="https://images.unsplash.com/photo-1566768677456-1120a20e7a12?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="Avatar" class="image" style="width:100%">
+          <div class="middle">
+            <div class="text"> <a href="proj\ex.beer.html">자세히 보기</a></div>
+          </div>
+        </div>
+        <div class="card-text2">
+          <br><h2>Etc</h2> <br>
+            갈색병은 이제 그만, <br>
+            지중해의 파란 하늘빛을 닮은 병에 담긴 맥주는 어떤가요? <br > <br>
+            here are many variations of passages of Lorem Ipsum available, <br>
+            but the majority have suffered alteration in some form, by injecte <br>
+            u need to be sure there isn't anything embarrassing hidden in the <br>
+            type and scrambled it to make a type specimen book. It has survived <br>
+            tend to repeat predefined chunks as necessary, making this the <br>
+            ing, remaining essentially unchanged. It was popularised in <br>
+            Contrary to popular belief, Lorem Ipsum is not simply random text. <br>
+             It has roots in a piece of classical Latin literature from 45 BC, <br> <br>
+        </div>   
+    </section>
+
+    <footer>
+      <div class="foot-left">
+        <ul>
+          <li><a>개인정보 취급 방침</a></li>
+          <li><a>이메일 무단 수집 거부</a></li>
+          <li><a>FAQ</a></li>
+          
+        </ul>
+      </div>
+    </footer>
+    <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>출력</h1>
+    <!-- 개발자 도구 실행 필요 -->
+
+    <script>
+        // console.log() : 웹 브라우저(개발자 도구) 콘솔을 통해 데이터 출력
+        console.log("console.log() 출력");
+    </script>
+
+    <script>
+        // alert() : 대화 상자를 띄워 데이터 출력
+        // alert("alert() 출력");
+    </script>
+
+    <script>
+        // document.write() : script 위치 순서에 따라 값을 입력 (잘 안쓰임)
+        // script 블록 위치에 따라   
+        document.write('document.write() 출력<br>');
+        document.write('document.write() 출력');
+
+    </script>
+    <div id="place1">ㅇㄴ</div>
+
+    <script>
+        // innerHTML : 특정 요소를 찾아 그 안에 데이터 출력
+        // document.getElementById('아이디') 로 특정 요소를 찾아, 그 속에 innerHTML로 태그, 스타일 값 등을 넣어준다
+
+        document.getElementById('place1').innerHTML="innerHTML 출력";
+    </script>
+    <div id="place2">dd</div>
+    <script>
+        document.getElementById('place2').style.color="red";
+    
+    </script>
+
+</body>
+</html>

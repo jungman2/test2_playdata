@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>맥주</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR&display=swap" rel="stylesheet">
+    <style>
+    div {
+        /*  box-sizing을 border-box로 설정
+            좌우 중앙 정렬
+            */
+            box-sizing: border-box;
+            margin: 0px auto;
+    }
+    #bg {
+        /*  가로 640px, 세로 480px
+            배경색 rgba(20, 20, 20, 0.7) 
+            (rgba : https://webdir.tistory.com/406)
+            배경 이미지 : https://images.unsplash.com/photo-1553563777-e7f319af6b47?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80
+            반복 없음
+            배경 이미지 사이즈 : 900px 675px
+            배경 이미지 x축 방향으로 30px 이동
+            상단 패딩 100px
+            */
+
+            width: 640px;
+            height: 480px;
+            background-color:transparent;
+            background-repeat: no-repeat;
+            background-image: url(https://www.guinness.com/media/1585/pdp_1440x900__0001_guinness_draught_spritz2_bottle.png);
+            background-size: 450px 300px;
+            background-position-x: -10px;
+            background-position-y: 70px;
+            padding-top: 100px;
+
+            border: 3px solid white;
+        
+        /* 참고 : https://coderap.tistory.com/137 */
+    }
+  
+    #content{
+        /*  가로 : 부모 요소의 50%
+            글자색 흰색, 텍스트 중앙정렬, 글자 크기 11px
+            테두리 흰색 실선 10px, 패딩 16px
+        */
+        width: 60%;
+        color: black;
+        text-align: left;
+        font-size: 11px;
+        /* border: 1px solid white; */
+        padding: 50px 0px 0px 30px;
+        margin-left: 200px;
+        display: table;
+        /* 내부의 컨텐츠를 가운데 정렬하기 위해 table 사용 */
+    }
+
+  
+    .serif{
+        font-family: serif;
+    }
+    div b{
+        font-size: 30px;
+    }
+    .detail{
+        font-family: 'Noto Serif KR', serif;
+    }
+    </style>    
+</head>
+<body>
+    <div id="bg">
+       
+        <div id="content">
+            <b class="serif"> GUINNESS</b>
+            <div class="detail">
+                <p>원산지 : 아일랜드<br>
+                도수 : 4.2%<br>
+                종류 : 다크 에일</p>
+           
+            <p>꽤 씁쓸하면서도 달콤 쌉싸름한 맛을 가지고 있다. <br>
+                만들 때 보리를 볶아서 쓰기 때문에 색이 까맣고,<br>
+                흑맥주의 특성을 잘 간직하고 있다</p>
+            <p>거품의 질감이 마치 크림같기에 라거를 크림으로 만든 듯한<br>
+               느낌에, 홉맛이 뒷맛으로 살짝 나는 것이 특징이다. <br>
+           </p>
+           </div>
+        </div>
+    </div>    
+</body>
+</html>

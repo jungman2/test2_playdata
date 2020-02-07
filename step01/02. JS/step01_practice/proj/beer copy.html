@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Do+Hyeon|Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Do+Hyeon|Jua|Nanum+Gothic+Coding|Nanum+Myeongjo|Noto+Sans+KR|Noto+Serif+KR&display=swap" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>Document</title>
+<style>
+  body{
+    box-sizing: border-box;
+    width: 80%;
+    margin-bottom: 100%;
+    
+    margin-left: 10%;
+  }
+  .site-name{
+    /* border: 1px solid black; */
+    margin-top: 5%;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 2.5em;
+    color: darkslategray;
+    text-shadow: 1px 1px gray;    
+  }
+
+  /* nav */
+  .navItem {
+    /* border: 1px solid black; */
+    display: inline-block;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 1.7rem;
+    padding-left: 40px;
+    }
+    nav a {
+        color: #1e2833;
+        /* text-shadow: 1px 1px gray; */
+        text-decoration: none;
+        /* font-family: 'Do Hyeon', sans-serif; */
+        
+        /* font-family: 'Nanum Myeongjo', serif; */
+        /* font-family: 'Nanum Gothic Coding', monospace; */
+        /* font-family: 'Noto Sans KR', sans-serif; */
+        /* font-family: 'Jua', sans-serif; */
+        font-family: 'Noto Serif KR', serif;
+    }
+    nav li:hover {
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+    .nav {
+        overflow: auto;
+    }
+    .nav-right-items{
+      /* border: 1px solid black; */
+        display: flex;
+        margin-left: 40%;    
+        margin-top: 5%;
+        align-items: center;
+    }
+    .head-text h2{
+      font-family: 'Nanum Myeongjo', serif;
+     
+      /* border: 1px solid black; */
+      margin-top: 60px;
+      font-size: 3em;
+      /* background-image: url(https://images.unsplash.com/photo-1436076863939-06870fe779c2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80); */
+      /* background-repeat: no-repeat; */
+      /* background-position-y: -200px; */
+      border-radius: 5px;
+      /* text-align: center; */
+      /* padding: 20px; */
+      margin-bottom: 40px;
+    }
+    .card-deck{
+      margin-top: 50px;
+    }
+
+    .card-img{
+      overflow: auto; 
+    }
+    
+    .bg-bottlecolor{
+    border: 1px solid red;
+}
+section{
+  border-top: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.card{
+    margin-left: 30px;
+    margin-top: 70px;
+    width: 45%;
+    /* height: 600px; */
+     display: inline-block;
+    border: 1px solid black;
+    padding: 15px; 
+ }
+
+
+ .card-text{
+    border: 1px solid black;
+  
+   margin-top: 10px;
+   text-align: center;
+   font-family: 'Nanum Myeongjo', serif;
+
+ }
+ .all-card{
+    margin-top: 70px;
+ }
+
+ .more-button {
+    color: black;
+    font-size: 12px;
+    font-weight: bolder;
+    display: inline-block;
+    text-align: center;
+    width: 98px;
+    height: 33px;
+    line-height: 33px;
+    border: 1px solid black; }
+</style>
+
+
+
+</head>
+<body>
+    <header>
+      <nav class="nav">
+        <div class="site-name">DAILY BEER</div>   
+         <div class="nav-right-items">
+           <div class="navItem"><a href="#shape">맥주병 색</a></div>
+           <div class="navItem"><a href="#size">도수   </a></div>
+           <div class="navItem"><a href="#ecology">종류</a></div>
+           <div class="navItem"><a href="#etc">기타정보</a></div> 
+        </div>
+      </nav>
+      <div class="head-text">
+        <h2>지금 이 순간, 나를 위한 맥주</h2>
+      </div>
+       <!-- <div class="site-name">
+          DAILY BEER
+       </div>
+       <nav>
+           <ul>
+             <li><a href="#shape">맥주병 색</a></li>
+             <li><a href="#size">도수</a></li>
+             <li><a href="#ecology">종류</a></li>
+             <li><a href="#etc">기타정보</a></li>
+           </ul>
+        </nav> -->
+     </header>    
+    <section>
+      <div class="all-card">
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2016/11/29/12/32/beach-1869523_960_720.jpg" alt="beer-img1" class="card-img">
+          <span class="more-button">자세히 보기</span>
+          <div class="card-text">갈색병은 이제 그만, 지중해의 파란 하늘빛을 닮은 병에 담긴 맥주는 어떤가요?</div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1532634905-7db9859e6832?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" height="" alt="beer-img2" class="card-img">
+          <span class="more-button">자세히 보기</span>
+          <div class="card-text">갈색병은 이제 그만, 지중해의 파란 하늘빛을 닮은 병에 담긴 맥주는 어떤가요?</div>
+        </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1576626218405-db77c87e78c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1047&q=80" alt="beer-img1" class="card-img">
+        <span class="more-button">자세히 보기</span>
+        <div class="card-text">갈색병은 이제 그만, 지중해의 파란 하늘빛을 닮은 병에 담긴 맥주는 어떤가요?</div>
+      </div>
+
+      <div class="card">
+          <img src="https://images.unsplash.com/photo-1566768677456-1120a20e7a12?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="beer-img1" class="card-img">
+        <span class="more-button">자세히 보기</span>
+        <div class="card-text">갈색병은 이제 그만, 지중해의 파란 하늘빛을 닮은 병에 담긴 맥주는 어떤가요?</div>
+       </div>
+    </div>   
+    </section>
+
+    <footer>
+
+    </footer>
+    <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

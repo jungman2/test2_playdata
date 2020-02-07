@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+    <script>
+        // HTML 내부 script 태그 : head
+        document.getElementById('head').innerHTML='Hello World';
+        //이게 안나오는데 왜냐면 아직 body부분이 그려지지 않았기 때문에
+
+    </script>
+    <!-- 외부 script 파일 : head -->
+    <script src="my.js"></script>
+</head>
+<body>
+    <h1>JavaScript 적용</h1>
+    <div id="head">head</div>
+    <div id="body">body</div>
+    <div id="file">file</div>
+    <script>
+    // HTML 내부 script 태그 : body
+    document.getElementById('body').innerHTML='Hello World';
+
+
+    </script>
+    <!-- 외부 script 파일 : body -->
+    <script src="my.js"></script>
+
+
+</body>
+</html>

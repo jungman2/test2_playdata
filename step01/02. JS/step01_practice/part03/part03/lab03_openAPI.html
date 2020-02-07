@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>오픈 API</title>
+</head>
+<body>
+    <!-- 서울열린데이터광장(https://data.seoul.go.kr/) 또는 공공데이터포털(https://www.data.go.kr/)에서 적절한 API 선택 및 인증키 발급
+    서울시 지하철호선별 역별 승하차 인원 정보
+ : https://data.seoul.go.kr/dataList/OA-12914/S/1/datasetView.do
+    api 호출 주소 : http://openapi.seoul.go.kr:8088/(인증키)/json/CardSubwayStatsNew/(시작 위치)/(종료 위치))/(YYYYMMDD)로 표현된 날짜
+    예) http://openapi.seoul.go.kr:8088/7841536d59626f6f34354178506a50/json/CardSubwayStatsNew/1/5/20200101
+    -->
+    <div>
+        <button onclick="getData()">데이터 가져오기</button>
+    </div>
+    <!-- rest api를 get 또는 post 방식으로 받을 때 쓰는 API = axios (기존의 https 방식 대체) -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+        const key = "7841536d59626f6f34354178506a50"
+        let start = 1; end = 50; date = "20200101"
+        const data = [];
+        function getData() {
+            // get 다음에 ()에 주소를 넣는다
+            axios.get('http://openapi.seoul.go.kr:8088/' + key
+                + '/json/CardSubwayStatsNew/'
+                + start + '/' + end + '/' + date)
+              .then(function(response) {
+                console.log(response.data);
+                data.push(response.data);
+                // 홈페이지 참고하여 원하는 데이터 뽑아가기
+                let row = response.data.CardSubwayStatsNew.row
+                row.forEach(
+                    function(v) {
+                        // document를 쓰면 이전에 이미 작성되었던 html 요소는 사라집니다
+                        document.write(v['LINE_NUM'] + "/"  + v['SUB_STA_NM'] + "/" + v['RIDE_PASGR_NUM'] + "/" + v['ALIGHT_PASGR_NUM'] );
+                        document.write("<br>");
+                    }
+                )
+              })
+              .catch(function(error) {
+                console.log(error);
+              });
+        }
+    </script>
+</body>
+</html>

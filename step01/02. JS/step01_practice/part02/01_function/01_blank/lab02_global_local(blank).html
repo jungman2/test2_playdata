@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>변수의 범위</h1>
+    <script>
+        console.log('[변수의 범위]')
+        let b = 20;// 주로 함수 안에 있다고 생각하면 됨
+        function myFun() {
+            let a = 10; //지역 변수
+
+            
+        }
+        myFun();
+        // 함수 바깥에 함수(전역 변수)와 안 함수가 있을 때 가까운 것부터 우선 참조
+         // <== 전역변수
+        function myFun2() {
+             // <== 지역변수
+            
+        }
+        
+        
+        // 전역변수는 블록 안에서도 가져다 쓸 수 있지만, 반대는 안 됨
+        
+        function myFun3() {
+            let d = false;
+            console.log(d);
+
+        }
+        myFun3();
+       // console.log(d);
+        
+        function myFun4(a, b, c, d, e, f){
+            
+        }
+        
+        
+        
+        // 매개변수도 일종의 지역 변수
+
+
+
+
+
+    </script>
+</body>
+</html>

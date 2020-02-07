@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>반복문</h1>
+    <h2>while</h2>
+    <script>
+        // 특정 조건이 참인 경우에만 계속 반복하는 while
+        // while (표현식) {표현식이 참인 동안 반복적으로 실행하고자 하는 실행문}
+        let w = 0;
+        while(w < 9){
+            w++;
+            document.write(w + "의 제곱은 " + w**2 + "<br>");
+            document.write("<br>");
+        }
+        
+        // 탈출할 길이 없어서 무한 루프에 빠짐
+        
+        // while(w>5){
+        //     console.log("무한루프")
+        //     w++;
+        // }
+        
+    </script>
+    <h2>for</h2>
+    <script>
+        // 특정 횟수만큼 반복하는 for
+        // for (초기식; 표현식; 증감식) {표현식의 결과가 참인 동안 반복적으로 실행하고자 하는 실행문}
+        for(let i=0; i<9; i++){
+            document.write(i + "의 제곱은 " + i**2 + "<br>");
+            document.write("<br>");
+         
+        }
+    </script>
+
+    <script>    
+        // 간단한 문제
+        // 월 이율 10%인 상품에 100만원을 투자했을 때 200만원이 되려면 몇 달이 필요한가?
+        // while
+        let interest = 10;
+        let first = 100;
+        let month = 0;
+        while(first<=200){
+            first=first + first*(10/100);
+            month++;
+        }
+        // for
+
+        // 월 이율 5%인 상품에 150만원을 투자했을 때 2년 후 얼마인가?
+        // while
+
+        // for 
+
+    </script>
+</body>
+</html>

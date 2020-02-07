@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>함수</h1>
+    <h2>함수의 필요성</h2>
+    <script>
+        // 함수의 필요성
+        console.log('[함수의 필요성]')
+        // 1. 원하는 시점에 2. 간결하게 식별자를 통해서 3. 원하는만큼
+        let count =0;
+        // 숫자 세는 함수 countNumber, num은 몇 번을 셀 지, 얼마만큼 더할지(매개변수)
+        function countNumber(num, plus){
+            // 0부터 시작해서 num-1까지 반복하는 반복문 (실제로는 num번 만큼 반복)
+            for(let i = 0; i < num; i++){
+                count += plus;
+                console.log(count);
+            }
+
+        }
+
+    </script>
+    <button onclick="count++; console.log(count);">+1 버튼</button> <br>
+    <button onclick="countNumber(50, 17);">+1 두 번 버튼</button>
+    <h2>함수의 선언</h2>
+    <script>
+        // 함수의 선언
+        console.log('[함수의 선언]')
+        // function 함수이름(매개변수1, 매개변수2...) {함수가 호출되었을 때 실행하고자 하는 실행문;}
+        // addNum라는 이름의 함수를 정의
+        function addNum( x, y ) { // 함수 내부에 x와 y라는 값을 전달하여
+            console.log(x + y); // 아래 내용을 실행 (console.log도 함수)
+        }
+        addNum( 10, 20); // 함수의 식별자를 통해서 호출
+        function myFun( ) {
+            console.log("매개 변수가 없어도 함수 선언 가능");
+        }
+        myFun();
+        function myFun2(x, y, z) {
+            console.log("x", x);
+            console.log("y", y);
+            console.log("z", z);
+        }
+        // 함수의 매개변수를 부족하게 혹은 넘치게 입력했을 때
+        myFun2(1); // 부족한 매개변수는 자리는 있는데 초기화가 안 된 셈 => undefined
+        myFun2(1, 2);
+        myFun2(1, 2, 3);
+        myFun2(1, 2, 3, 4); // 넘어가는 매개변수는 무시된다
+    </script>
+    <h2>함수의 출력</h2>
+    <script>
+        // 함수의 출력
+        console.log('[함수의 출력]')
+        function addNum2(x, y) {
+            return x + y ; // return 뒤에 있는 내용을 함수의 결과값으로 반환합니다
+        }
+        
+        // 변수의 값으로 함수를 쓸 수 있음
+        
+    </script>
+</body>
+</html>
